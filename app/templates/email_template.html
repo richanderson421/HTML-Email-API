@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ subject }}</title>
+</head>
+<body>
+    <h1>Hello, {{ recipient_name }}</h1>
+    <p>{{ message_body }}</p>
+    <h2>Product Details</h2>
+    <ul>
+        {% for key, value in product_details.items() %}
+        <li><strong>{{ key }}:</strong> {{ value }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
